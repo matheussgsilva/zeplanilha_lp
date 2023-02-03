@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="tailus ui html-vite and tailwindcss 3.1 boilerplate" />
+    <title>Zé Planilha - Planilha Fluxo de Caixa</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&amp;display=swap"
+        rel="stylesheet" />
 </head>
-<body>
-    <h1>It's work</h1>
+
+<body class="min-h-screen bg-white selection:bg-primary/10 selection:text-primary">
+    <header>
+        <nav id="navbar"
+            class="fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                    <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                        <a href="/" aria-label="logo" class="flex items-center space-x-2">
+                            <img src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/08/3_200px.png"
+                                alt="Logo Zé Planilha">
+                            <defs>
+                                <clipPath id="clip0_4_24">
+                                    <rect width="1206" height="270" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </a>
+
+                        <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
+                            <div aria-hidden="true" class="m-auto h-0.5 w-5 rounded bg-green-500 transition duration-300">
+                            </div>
+                            <div aria-hidden="true"
+                                class="m-auto mt-2 h-0.5 w-5 rounded bg-green-500 transition duration-300"></div>
+                        </button>
+                    </div>
+                    <div id="layer" aria-hidden="true"
+                        class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 lg:hidden">
+                    </div>
+                    <div id="navlinks"
+                        class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0">
+                        <div class="lg:pr-4">
+                            <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
+                                <li
+                                    class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:pl-6">
+                                    <a href="https://zeplanilha.com/fluxodecaixa/"
+                                        class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded before:bg-gray-100 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100">
+                                        <span class="relative text-sm font-semibold text-black lg:text-black">Planilha
+                                            DEMO</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:pl-6">
+                                    <a href="https://wa.me/5512936180212"
+                                        class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded before:bg-gray-300 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:px-4 lg:before:border lg:before:border-gray-400 lg:before:bg-gray-300">
+                                        <span class="relative text-sm font-semibold text-black lg:text-black">Fale
+                                            conosco via Whatsapp</span>
+                                    </a>
+                                </li>
+                                <li
+                                    class="mt-12 -ml-1 flex w-full flex-col space-y-2 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:pl-6">
+                                    <a href="https://seguro.zeplanilha.com/r/ABE0WSGLNP"
+                                        class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded before:bg-green-300 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:px-4 lg:before:border lg:before:border-green-400 lg:before:bg-green-300">
+                                        <span class="relative text-sm font-semibold text-black lg:text-black">Comprar
+                                            Planilha</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <script type="module" src="./app.js"></script>
 </body>
+
 </html>
