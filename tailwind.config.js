@@ -370,6 +370,9 @@ module.exports = {
             sans: ["ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", '"Noto Sans"', "sans-serif", '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
             serif: ["ui-serif", "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
             mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", '"Liberation Mono"', '"Courier New"', "monospace"],
+            manrope: ['Manrope', "sans-serif"],
+            poppins: ['Poppins', "sans-serif"],
+            roboto: ['Roboto', "sans-serif"],
         },
         fontSize: {
             xs: ["0.75rem", { lineHeight: "1rem" }],
