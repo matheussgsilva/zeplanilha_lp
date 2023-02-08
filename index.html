@@ -724,45 +724,45 @@
                     </h3>
                 </div>
                 <div class="flex justify-between">
-                    <div class="mb-4 border-b border-gray-200">
-                        <ul class="flex flex-col flex-wrap -mb-px text-sm font-medium text-center" id="myTab"
+                    <div class="mb-4">
+                        <ul class="flex flex-col -mb-px mr-6 font-semibold font-manrope text-left" id="myTab"
                             data-tabs-toggle="#myTabContent" role="tablist">
                             <li class="mr-2" role="presentation">
-                                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="operation-tab"
+                                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg lg:text-2xl md:text-xl sm:text-base" id="operation-tab"
                                     data-tabs-target="#operation" type="button" role="tab" aria-controls="operation"
                                     aria-selected="false">Cadastro da Operação</button>
                             </li>
                             <li class="mr-2" role="presentation">
                                 <button
-                                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 lg:text-2xl md:text-xl sm:text-base"
                                     id="customer-tab" data-tabs-target="#customer" type="button" role="tab"
                                     aria-controls="customer" aria-selected="false">Cadastro de Clientes</button>
                             </li>
                             <li class="mr-2" role="presentation">
                                 <button
-                                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 lg:text-2xl md:text-xl sm:text-base"
                                     id="supplier-tab" data-tabs-target="#supplier" type="button" role="tab"
                                     aria-controls="supplier" aria-selected="false">Cadastro de Fornecedores</button>
                             </li>
                             <li role="presentation">
                                 <button
-                                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 lg:text-2xl md:text-xl sm:text-base"
                                     id="input-tab" data-tabs-target="#input" type="button" role="tab"
                                     aria-controls="input" aria-selected="false">Cadastro das Entradas</button>
                             </li>
                             <li role="presentation">
                                 <button
-                                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300"
+                                    class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 lg:text-2xl md:text-xl sm:text-base"
                                     id="output-tab" data-tabs-target="#output" type="button" role="tab"
                                     aria-controls="output" aria-selected="false">Cadastro das Saídas</button>
                             </li>
                         </ul>
                     </div>
-                    <div id="myTabContent">
+                    <div class="max-w-2xl" id="myTabContent">
                         <div class="hidden p-4 bg-gray-50" id="operation" role="tabpanel"
                             aria-labelledby="operation-tab">
                             <div class="flex flex-col">
-                                <p class="text-sm text-gray-50">Possibilidade de cadastrar centro de custo, bancos e formas de pagamento.</p>
+                                <p class="text-md font-medium text-gray-500">Possibilidade de cadastrar centro de custo, bancos e formas de pagamento.</p>
                                 <img class="md:-ml-8 w-auto h-auto"
                                 src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/11/cadastro_controle.png"
                                 alt="Dashboard cadastro de operação" loading="lazy" width="" height="" />
@@ -771,7 +771,7 @@
                         <div class="hidden p-4 rounded-lg bg-gray-50" id="customer" role="tabpanel"
                             aria-labelledby="customer-tab">
                             <div class="flex flex-col">
-                                <p class="text-sm text-gray-50">Cadastro de clientes e seus parâmetros (você escolhe: telefone, endereço, responsável, etc).</p>
+                                <p class="text-md font-medium text-gray-500">Cadastro de clientes e seus parâmetros (você escolhe: telefone, endereço, responsável, etc).</p>
                                 <img class="md:-ml-8 w-auto h-auto"
                                 src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/08/screen-vertical-largo-cadastro02.png"
                                 alt="Dashboard cadastro de clientes" loading="lazy" width="" height="" />
@@ -780,7 +780,7 @@
                         <div class="hidden p-4 rounded-lg bg-gray-50" id="supplier" role="tabpanel"
                             aria-labelledby="supplier-tab">
                             <div class="flex flex-col">
-                                <p class="text-sm text-gray-50">Cadastro de fornecedores e seus parâmetros (você escolhe: telefone, endereço, responsável, etc).</p>
+                                <p class="text-md font-medium text-gray-500">Cadastro de fornecedores e seus parâmetros (você escolhe: telefone, endereço, responsável, etc).</p>
                                 <img class="md:-ml-8 w-auto h-auto"
                                 src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/08/screen-vertical-largo-cadastro03.png"
                                 alt="Dashboard cadastro de fornecedores" loading="lazy" width="" height="" />
@@ -789,7 +789,7 @@
                         <div class="hidden p-4 rounded-lg bg-gray-50" id="input" role="tabpanel"
                             aria-labelledby="input-tab">
                             <div class="flex flex-col">
-                                <p class="text-sm text-gray-50">Cadastro do tipo de entrada e seu vínculo para o demonstrativo financeiro (DRE)</p>
+                                <p class="text-md font-medium text-gray-500">Cadastro do tipo de entrada e seu vínculo para o demonstrativo financeiro (DRE)</p>
                                 <img class="md:-ml-8 w-auto h-auto"
                                 src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/08/screen-vertical-largo-cadastro04.png"
                                 alt="Dashboard cadastro de entradas" loading="lazy" width="" height="" />
@@ -798,10 +798,65 @@
                         <div class="hidden p-4 rounded-lg bg-gray-50" id="output" role="tabpanel"
                             aria-labelledby="output-tab">
                             <div class="flex flex-col">
-                                <p class="text-sm text-gray-50">Cadastro do tipo de saída e seu vínculo para o demonstrativo financeiro (DRE).</p>
+                                <p class="text-md font-medium text-gray-500">Cadastro do tipo de saída e seu vínculo para o demonstrativo financeiro (DRE).</p>
                                 <img class="md:-ml-8 w-auto h-auto"
                                 src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/08/screen-vertical-largo-cadastro05.png"
                                 alt="Dashboard cadastro de saídas" loading="lazy" width="" height="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-b from-gray-100 to-transparent pt-20 my-20">
+        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0 font-poppins">
+            <h2 class="text-center text-3xl font-medium text-gray-800 md:text-4xl xl:text-5xl">Conheça os <b>autores</b> da planilha</h2>
+            <div class="mt-20">
+                <div class="mx-auto flex flex-wrap justify-evenly">
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <div class="h-38 w-38 bg-gradient-to-r from-cyan-700 to-emerald-400 p-1 rounded-full flex justify-center items-center">
+                            <img src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/07/foto-matheus-400x400.png" alt="Foto autor" class="h-36 w-36 border-white border-4 rounded-full object-cover" loading="lazy" width="350" height="350" />
+                        </div>
+                        <div class="mt-4 max-w-xs">
+                            <h3 class="lg:text-3xl md:text-2xl sm:text:xl font-semibold text-gray-800">Matheus Soares</h3>
+                            <span class="mt-2 mb-4 block text-gray-700 font-semibold lg:text-xl md:text-lg sm:text:base">CEO Zeplanilha</span>
+                            <span class="text-gray-500">Engenheiro formado pela Federal de Itajubá e diretor de analytics & marketing de startup.</span>
+                            <div class="mt-4 flex justify-center gap-4">
+                                <a href="https://www.linkedin.com/in/matheus-soares-26707ba5/" target="_blank" aria-label="twitter" class="text-gray-600 hover:bg-opacity-80 duration-200 p-1 rounded bg-[#1024FB]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5" style="color: #fff;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <div class="h-38 w-38 bg-gradient-to-r from-cyan-700 to-emerald-400 p-1 rounded-full flex justify-center items-center">
+                            <img src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/07/foto-simone-400x400.png" alt="Foto autor" class="h-36 w-36 border-white border-4 rounded-full object-cover" loading="lazy" width="350" height="350" />
+                        </div>
+                        <div class="mt-4 max-w-xs mx-6">
+                            <h3 class="lg:text-3xl md:text-2xl sm:text:xl font-semibold text-gray-800">Simone Pegoraro</h3>
+                            <span class="mt-2 mb-4 block text-gray-700 font-semibold lg:text-xl md:text-lg sm:text:base">Gerente de Controladoria e Finanças</span>
+                            <span class="text-gray-500">Profissional com experiências na área financeira em multinacionais com MBA em negócios financeiros.</span>
+                            <div class="mt-4 flex justify-center gap-4">
+                                <a href="https://www.linkedin.com/in/simonepegoraro/" target="_blank" aria-label="twitter" class="text-gray-600 hover:bg-opacity-80 duration-200 p-1 rounded bg-[#1024FB]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5" style="color: #fff;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <div class="h-38 w-38 bg-gradient-to-r from-cyan-700 to-emerald-400 p-1 rounded-full flex justify-center items-center">
+                            <img src="https://zeplanilha.com/fluxodecaixa/wp-content/uploads/2022/10/foto-rodolfo-400x400.png" alt="Foto autor" class="h-36 w-36 border-white border-4 rounded-full object-cover" loading="lazy" width="350" height="350" />
+                        </div>
+                        <div class="mt-4 max-w-xs">
+                            <h3 class="lg:text-3xl md:text-2xl sm:text:xl font-semibold text-gray-800">Rodolfo Farias</h3>
+                            <span class="mt-2 mb-4 block text-gray-700 font-semibold lg:text-xl md:text-lg sm:text:base">Consultoria Estratégica</span>
+                            <span class="text-gray-500">Engenheiro Mecânico-Aeronáutico formado pelo ITA e Associate do Boston Consulting Group.</span>
+                            <div class="mt-4 flex justify-center gap-4">
+                                <a href="https://www.linkedin.com/in/jrodolfofneto/" target="_blank" aria-label="twitter" class="text-gray-600 hover:bg-opacity-80 duration-200 p-1 rounded bg-[#1024FB]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5" style="color: #fff;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                                </a>
                             </div>
                         </div>
                     </div>
