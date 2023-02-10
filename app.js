@@ -21,7 +21,7 @@ formDemo.addEventListener("submit", event => {
     fetch('https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t', {
         method: 'POST',
         headers: {
-            'Content-Type': 'applicatio/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
     })
