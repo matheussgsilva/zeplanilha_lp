@@ -12,7 +12,7 @@ hamburger.addEventListener("click", () => {
     navbar.classList.toggle("navbar-active");
 });
 
-formDemo.addEventListener("submit", event => {
+formDemo.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const formData = new FormData(formDemo);
@@ -25,4 +25,8 @@ formDemo.addEventListener("submit", event => {
         },
         body: JSON.stringify(data)
     })
+    .then(res => res.json())
+    .then(data => console.log(data))
+
+    demoModal.dia;
 })
