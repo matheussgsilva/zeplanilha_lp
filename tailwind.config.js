@@ -2,7 +2,11 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-    content: ["./*.html", "./pages/*.html"],
+    content: [
+        "./*.html", 
+        "./pages/*.html",
+        "./node_modules/flowbite/**/*.js"
+    ],
     safelist: ["rotate-180", "translate-y-0", "translate-y-[100%]", "z-10", "scale-75", "navbar-active"],
     presets: [],
     darkMode: "class", // or 'media' or 'class'
@@ -935,5 +939,6 @@ module.exports = {
         plugin(function ({ addVariant }) {
             addVariant("children", "&>*");
         }),
+        require('flowbite/plugin')
     ],
 };
