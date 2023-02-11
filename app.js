@@ -1,6 +1,7 @@
 import "./assets/app.css";
 import "./src/js/faqs.js";
 import "./src/js/solutions.js";
+import 'flowbite';
 
 const hamburger = document.querySelector("#hamburger");
 const navbar = document.querySelector("#navbar");
