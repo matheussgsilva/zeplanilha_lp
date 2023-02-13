@@ -1,18 +1,15 @@
 import "./assets/app.css";
 import "./src/js/faqs.js";
 import "./src/js/solutions.js";
+import "./src/js/video.js";
 import 'flowbite';
-import { Modal } from "flowbite";
 
 const hamburger = document.querySelector("#hamburger");
 const navbar = document.querySelector("#navbar");
 const formDemo = document.querySelector("#formDemo");
 const demoModal = document.querySelector("#authentication-modal");
-const mybutton = document.querySelector("#btn-back-to-top");
-const toast = document.querySelector("#toast-success");
-const modalButton = document.querySelector("#modalButton")
-
-const modal = new Modal(demoModal)
+const mybutton = document.querySelector("#buyButton");
+const modalButton = document.querySelector("#modalButton");
 
 hamburger.addEventListener("click", () => {
     navbar.classList.toggle("navbar-active");
@@ -25,8 +22,7 @@ formDemo.addEventListener("submit", function(event) {
     const data = Object.fromEntries(formData);
     
 
-    //https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t
-    fetch('https://httpbin.org/post', {
+    fetch('https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -35,19 +31,11 @@ formDemo.addEventListener("submit", function(event) {
     })
     .then(res => res.json())
     .then(alert(),
-        disableButton(),
-        toast.classList.remove("hidden"),
-        closeModal()
+        disableButton()
     )
     .catch(error => console.log(error))    
 
 })
-
-function closeModal () {
-    setTimeout(() => {
-        toast.classList.add("hidden");
-      }, "3000")
-}
 
 function disableButton() {
   modalButton.classList.add("cursor-not-allowed");
@@ -73,3 +61,5 @@ function scrollFunction() {
     mybutton.style.display = 'none';
   }
 }
+
+
