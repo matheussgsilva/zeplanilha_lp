@@ -10,6 +10,7 @@ const formDemo = document.querySelector("#formDemo");
 const demoModal = document.querySelector("#authentication-modal");
 const mybutton = document.querySelector("#btn-back-to-top");
 const toast = document.querySelector("#toast-success");
+const modalButton = document.querySelector("#modalButton")
 
 const modal = new Modal(demoModal)
 
@@ -34,6 +35,7 @@ formDemo.addEventListener("submit", function(event) {
     })
     .then(res => res.json())
     .then(alert(),
+        disableButton(),
         toast.classList.remove("hidden"),
         closeModal()
     )
@@ -47,11 +49,16 @@ function closeModal () {
       }, "3000")
 }
 
+function disableButton() {
+  modalButton.classList.add("cursor-not-allowed");
+  modalButton.setAttribute("disabled", "disabled");
+}
+
 function alert() {
     let success = document.querySelector("#successAlert")
     let paragraph = document.createElement("p");
-    let text = document.createTextNode("Sucesso!");
-    paragraph.appendChild(text)
+    let textEmail = document.createTextNode("Seu email foi inserido com sucesso! Você já pode fechar essa janela e verificar o seu email.");
+    paragraph.appendChild(textEmail);
     success.appendChild(paragraph);
 }
 
