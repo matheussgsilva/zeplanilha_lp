@@ -1,15 +1,20 @@
 import "./assets/app.css";
 import "./src/js/faqs.js";
 import "./src/js/solutions.js";
-import "./src/js/video.js";
 import 'flowbite';
 
 const hamburger = document.querySelector("#hamburger");
 const navbar = document.querySelector("#navbar");
 const formDemo = document.querySelector("#formDemo");
-const demoModal = document.querySelector("#authentication-modal");
 const mybutton = document.querySelector("#buyButton");
 const modalButton = document.querySelector("#modalButton");
+const mockup = document.querySelector("#videoMockup");
+const video = document.querySelector("#videoDemo");
+
+mockup.addEventListener("click", () => {
+  video.classList.remove("hidden");
+  mockup.classList.add("hidden");
+})
 
 hamburger.addEventListener("click", () => {
     navbar.classList.toggle("navbar-active");
