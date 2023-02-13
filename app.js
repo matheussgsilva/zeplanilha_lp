@@ -23,7 +23,9 @@ formDemo.addEventListener("submit", function(event) {
     const formData = new FormData(formDemo);
     const data = Object.fromEntries(formData);
     
-    fetch('https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t', {
+
+    //https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t
+    fetch('https://httpbin.org/post', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -31,7 +33,7 @@ formDemo.addEventListener("submit", function(event) {
         body: JSON.stringify(data)
     })
     .then(res => res.json())
-    .then(modal.hide(),
+    .then(alert(),
         toast.classList.remove("hidden"),
         closeModal()
     )
@@ -45,6 +47,13 @@ function closeModal () {
       }, "3000")
 }
 
+function alert() {
+    let success = document.querySelector("#successAlert")
+    let paragraph = document.createElement("p");
+    let text = document.createTextNode("Sucesso!");
+    paragraph.appendChild(text)
+    success.appendChild(paragraph);
+}
 
 window.onscroll = function () {
   scrollFunction();
@@ -57,4 +66,3 @@ function scrollFunction() {
     mybutton.style.display = 'none';
   }
 }
-
