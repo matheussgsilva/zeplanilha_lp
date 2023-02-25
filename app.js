@@ -10,6 +10,14 @@ const mybutton = document.querySelector("#buyButton");
 const modalButton = document.querySelector("#modalButton");
 const mockup = document.querySelector("#videoMockup");
 const video = document.querySelector("#videoDemo");
+const buyBtnHeader = document.querySelector("#buyBtnHeader");
+const buyBtnMain = document.querySelector("#buyBtnMain");
+const buyBtnFinal = document.querySelector("#buyBtnFinal");
+const buyBtnMobile = document.querySelector("#buyBtnMobile");
+
+const url = new URL(window.location);
+const path = url.search;
+
 
 mockup.addEventListener("click", () => {
   video.classList.remove("hidden");
@@ -69,6 +77,36 @@ function scrollFunction() {
   } else {
     mybutton.style.display = 'none';
   }
-}
+};
 
+buyBtnHeader.addEventListener("click", ()=> {
+  if (path === "") {
+    buyBtnHeader.setAttribute("href", "https://seguro.zeplanilha.com/r/ABE0WSGLNP?utm_source=direto&utm_campaign=direto")
+  } else {
+    buyBtnHeader.setAttribute("href", `https://seguro.zeplanilha.com/r/ABE0WSGLNP${path}`)
+  }
+});
 
+buyBtnMain.addEventListener("click", ()=> {
+  if (path === "") {
+    buyBtnMain.setAttribute("href", "https://seguro.zeplanilha.com/r/ABE0WSGLNP?utm_source=direto&utm_campaign=direto")
+  } else {
+    buyBtnMain.setAttribute("href", `https://seguro.zeplanilha.com/r/ABE0WSGLNP${path}`)
+  }
+});
+
+buyBtnFinal.addEventListener("click", ()=> {
+  if (path === "") {
+    buyBtnFinal.setAttribute("href", "https://seguro.zeplanilha.com/r/ABE0WSGLNP?utm_source=direto&utm_campaign=direto")
+  } else {
+    buyBtnFinal.setAttribute("href", `https://seguro.zeplanilha.com/r/ABE0WSGLNP${path}`)
+  }
+});
+
+buyBtnMobile.addEventListener("click", ()=> {
+  if (path === "") {
+    buyBtnMobile.setAttribute("href", "https://seguro.zeplanilha.com/r/ABE0WSGLNP?utm_source=direto&utm_campaign=direto")
+  } else {
+    buyBtnMobile.setAttribute("href", `https://seguro.zeplanilha.com/r/ABE0WSGLNP${path}`)
+  }
+});
