@@ -73,9 +73,15 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
-    mybutton.style.display = 'block';
+    mybutton.classList.remove("sm:hidden");
+    mybutton.classList.remove("xs:hidden");
+    mybutton.classList.add("sm:inline-block");
+    mybutton.classList.add("xs:inline-block");
   } else {
-    mybutton.style.display = 'none';
+    mybutton.classList.remove("sm:inline-block");
+    mybutton.classList.remove("xs:inline-block");
+    mybutton.classList.add("sm:hidden");
+    mybutton.classList.add("xs:hidden");
   }
 };
 
