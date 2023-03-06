@@ -72,7 +72,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
     mybutton.classList.remove("sm:hidden");
     mybutton.classList.remove("xs:hidden");
     mybutton.classList.add("sm:inline-block");
