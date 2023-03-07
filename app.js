@@ -34,13 +34,14 @@ formDemo.addEventListener("submit", function(event) {
 
     const formData = new FormData(formDemo);
     const data = Object.fromEntries(formData);
-    //'https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t'
-    fetch('https://jsonplaceholder.typicode.com/posts', {
+    const dataUtm = {...data, 'utm':path}
+    
+    fetch('https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(dataUtm)
     })
     .then(res => res.json())
     .then(alert(),
