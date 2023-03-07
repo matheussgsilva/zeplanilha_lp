@@ -14,6 +14,7 @@ const buyBtnHeader = document.querySelector("#buyBtnHeader");
 const buyBtnMain = document.querySelector("#buyBtnMain");
 const buyBtnFinal = document.querySelector("#buyBtnFinal");
 const buyBtnMobile = document.querySelector("#buyBtnMobile");
+const modalText = document.querySelectorAll(".modal-text");
 
 const url = new URL(window.location);
 const path = url.search;
@@ -33,8 +34,8 @@ formDemo.addEventListener("submit", function(event) {
 
     const formData = new FormData(formDemo);
     const data = Object.fromEntries(formData);
-    
-    fetch('https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t', {
+    //'https://hook.us1.make.com/3a7l8yrhup3ac2c65ww4bdebgl424r6t'
+    fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -55,17 +56,24 @@ function disableButton() {
 }
 
 function alert() {
-    let success = document.querySelector("#successAlert");
-    let close = document.querySelector("#closeAlert");
-    let successParagraph = document.createElement("p");
-    let alertParagraph = document.createElement("p");
-    let textEmail = document.createTextNode("Seu email foi inserido com sucesso!");
-    let textCloseModal = document.createTextNode("Você já pode fechar essa janela e verificar o seu email.")
-    successParagraph.appendChild(textEmail);
-    success.appendChild(successParagraph);
-    alertParagraph.appendChild(textCloseModal);
-    close.appendChild(alertParagraph);
-}
+  let success = document.querySelector("#successAlert");
+  let close = document.querySelector("#closeAlert");
+  let successParagraph = document.createElement("p");
+  let alertParagraph = document.createElement("p");
+  let textEmail = document.createTextNode("Seu email foi inserido com sucesso!");
+  let textCloseModal = document.createTextNode("Você já pode fechar essa janela e verificar o seu email.")
+  successParagraph.appendChild(textEmail);
+  success.appendChild(successParagraph);
+  alertParagraph.appendChild(textCloseModal);
+  close.appendChild(alertParagraph);
+  hiddeModalText();
+};
+
+function hiddeModalText() {
+  for(let i=0; i<modalText.length; i++){
+    modalText[i].classList.add("hidden");
+  }
+};
 
 window.onscroll = function () {
   scrollFunction();
