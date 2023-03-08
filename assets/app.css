@@ -10,43 +10,43 @@ body {
     @font-face {
         font-family: "Poppins";
         font-weight: 300;
-        src: url("/fonts/poppins-light-webfont.woff2") format("woff2"),
-        url("/fonts/poppins-light-webfont.woff") format("woff")
+        src: url("fonts/poppins-light-webfont.woff2") format("woff2"),
+        url("fonts/poppins-light-webfont.woff") format("woff")
     }
 
     @font-face {
         font-family: "Poppins";
         font-weight: 400;
-        src: url("/fonts/poppins-regular-webfont.woff2") format("woff2"),
-        url("/fonts/poppins-regular-webfont.woff") format("woff")
+        src: url("fonts/poppins-regular-webfont.woff2") format("woff2"),
+        url("fonts/poppins-regular-webfont.woff") format("woff")
     }
 
     @font-face {
         font-family: "Poppins";
         font-weight: 500;
-        src: url("/fonts/poppins-medium-webfont.woff2") format("woff2"),
-        url("/fonts/poppins-medium-webfont.woff") format("woff")
+        src: url("fonts/poppins-medium-webfont.woff2") format("woff2"),
+        url("fonts/poppins-medium-webfont.woff") format("woff")
     }
 
     @font-face {
         font-family: "Poppins";
         font-weight: 600;
-        src: url("/fonts/poppins-semibold-webfont.woff2") format("woff2"),
-        url("/fonts/poppins-semibold-webfont.woff") format("woff")
+        src: url("fonts/poppins-semibold-webfont.woff2") format("woff2"),
+        url("fonts/poppins-semibold-webfont.woff") format("woff")
     }
 
     @font-face {
         font-family: "Poppins";
         font-weight: 700;
-        src: url("/fonts/poppins-bold-webfont.woff2") format("woff2"),
-        url("/fonts/poppins-bold-webfont.woff") format("woff")
+        src: url("fonts/poppins-bold-webfont.woff2") format("woff2"),
+        url("fonts/poppins-bold-webfont.woff") format("woff")
     }
 
     @font-face {
         font-family: "Manrope";
         font-weight: 300;
-        src: url("/fonts/manrope-variablefont_wght-webfont.woff2") format("woff2"),
-        url("/fonts/manrope-variablefont_wght-webfont.woff") format("woff")
+        src: url("fonts/manrope-variablefont_wght-webfont.woff2") format("woff2"),
+        url("fonts/manrope-variablefont_wght-webfont.woff") format("woff")
     }
 }
 
