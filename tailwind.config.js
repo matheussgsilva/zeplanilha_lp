@@ -5,7 +5,8 @@ module.exports = {
     content: [
         "./*.html", 
         "./pages/*.html",
-        "./node_modules/flowbite/**/*.js"
+        "./node_modules/flowbite/**/*.js",
+        "./public/*"
     ],
     safelist: ["rotate-180", "translate-y-0", "translate-y-[100%]", "z-10", "scale-75", "navbar-active"],
     presets: [],
@@ -376,7 +377,7 @@ module.exports = {
             serif: ["ui-serif", "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
             mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", '"Liberation Mono"', '"Courier New"', "monospace"],
             manrope: ['Manrope', "sans-serif"],
-            poppins: "'Poppins', sans-serif",
+            poppins: ['Poppins', "sans-serif"],
             roboto: ['Roboto', "sans-serif"],
         },
         fontSize: {
