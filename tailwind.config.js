@@ -376,7 +376,7 @@ module.exports = {
             serif: ["ui-serif", "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
             mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", '"Liberation Mono"', '"Courier New"', "monospace"],
             manrope: ['Manrope', "sans-serif"],
-            poppins: ['Poppins', "sans-serif"],
+            poppins: "'Poppins', sans-serif",
             roboto: ['Roboto', "sans-serif"],
         },
         fontSize: {
